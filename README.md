@@ -45,10 +45,6 @@ pip install -r requirements.txt
 If you use `conda`, you can install the packages from [requirements.txt](requirements.txt) in an activated conda environment.
 
 ### 2) Models & weights
-
-
-
-**Models & weights**
 - Stable Diffusion 2.1 weights (required): download the Stable Diffusion 2.1 model weights and provide their folder path as `--pretrained_model_path` when running the scripts.
 - The DINO embedder in the code defaults to the HF model id `facebook/dinov3-vitb16-pretrain-lvd1689m` and will be downloaded automatically if not present in the local cache.
 - LoRA adapters and other checkpoints are read from the  `weights/checkpoints` directory in the repo; filenames in use by the code follow the pattern used in `weights/checkpoints` (e.g. `adapter_53001.pth`, `model_12501.pkl`). The files `adapter_53001.pth` and `lora_weights_dino_53001.safetensors` are already included in the repository. However, `model_12501.pkl` is not hosted on GitHub because it exceeds the file size limit (25 MB). It must be downloaded separately from the provided external link and placed into `weights/checkpoints/`. Save any checkpoints you download from the provided link into `weights/checkpoints/` so the code can find them.
@@ -64,9 +60,6 @@ python inference.py \
   --output_dir output/pred
 ```
 
-## Outputs
-
-Results are written under the `--output_root` directory. The script automatically constructs an experiment folder name based on the dataset, model, retrieval setup, and active flags.
 
 ## Citation
 
