@@ -4,7 +4,6 @@ import torch
 from torchvision import transforms
 from tqdm import tqdm
 
-#from pisasr_emb_siglip2b import PiSASR
 from gramsr import GramSR
 from src.my_utils.wavelet_color_fix import adain_color_fix, wavelet_color_fix
 from src.datasets.dataset import TestDatasetv2
