@@ -49,7 +49,7 @@ If you use `conda`, you can install the packages from [requirements.txt](require
 
 
 
-## Inference
+## Quick Inference
 
 ```bash
 python inference.py \
