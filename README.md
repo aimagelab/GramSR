@@ -47,6 +47,12 @@ If you use `conda`, you can install the packages from [requirements.txt](require
 
 ## Inference
 
+```bash
+python inference.py \
+  --pretrained_model_path /path/to/pretrained_model_or_hf_id \
+  --lora_dir /path/to/weights/checkpoints \
+  --output_dir output/pred
+```
 
 ## Outputs
 
