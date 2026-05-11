@@ -5,8 +5,6 @@ Diffusion-Based Super-Resolution </h1>
 
 <div align="center">
   
-[![Paper](https://img.shields.io/badge/Paper-arxiv.2511.22715-B31B1B.svg)]([https://arxiv.org/abs/2511.22715])
-[![HF Collection](https://img.shields.io/badge/🤗-HF%20Collection-yellow.svg)]()
 </div>
 
 <p align="center">
