@@ -7,12 +7,8 @@ Diffusion-Based Super-Resolution </h1>
   
 </div>
 
-<a href='https://arxiv.org/abs/2604.2545'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-
 <p align="center">
-  <a href="https://arxiv.org/abs/2604.25457">
-    <img src="./assets/model.png" alt="GramSR Paper on Arxiv" width="840" />
-  </a>
+<a href='https://arxiv.org/abs/2604.2545'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </p>
 ## 📢 Latest Updates
   - [2026/05/11] 🤗 Inference code and **weights** release
