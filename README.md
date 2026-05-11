@@ -24,10 +24,6 @@ GramSR is a
 - [Environment Setup](#environment-setup)
   - [Inference environment](#1-create-the-inference-environment-venv)
   - [EVQA evaluation environment](#2-create-the-evqa-evaluation-environment-evqa-eval)
-- [Datasets](#datasets)
-  - [Infoseek](#infoseek)
-  - [Encyclopedic-VQA](#encyclopedic-vqa)
-- [Knowledge Bases and FAISS Indexes](#knowledge-bases-and-faiss-indexes)
 - [Inference](#inference)
   - [Slurm (optional)](#slurm-optional)
   - [What the scripts do](#what-the-scripts-do)
@@ -52,29 +48,6 @@ pip install -r requirements.txt
 ```
 
 If you use `conda`, you can install the packages from [requirements.txt](requirements.txt) in an activated conda environment.
-
-## Datasets
- 
-We provide pre-packaged evaluation data for both benchmarks so you can get started quickly without navigating the original dataset repositories.
- 
-### Infoseek
- 
-Download the evaluation data for Infoseek [here](https://ailb-web.ing.unimore.it/publicfiles/drive/reflectiva/data_infoseek.zip). For the full dataset, refer to the [official repository](https://github.com/open-vision-language/infoseek).
- 
-The inference scripts expect Infoseek in JSONL format (`--query_path` points to a `.jsonl` file).
- 
-### Encyclopedic-VQA
- 
-Download the evaluation data for Encyclopedic-VQA [here](https://ailb-web.ing.unimore.it/publicfiles/drive/reflectiva/data_evqa.zip), and the evaluation images [here](https://ailb-web.ing.unimore.it/publicfiles/drive/reflectiva/evqa_inference_images.zip). For the full dataset, refer to the [official repository](https://github.com/google-research/google-research/tree/master/encyclopedic_vqa).
- 
-The inference scripts expect EVQA in JSON format (`--query_path` points to a `.json` file).
- 
-## Knowledge Bases and FAISS Indexes
- 
-Our work uses two knowledge bases, one per benchmark. To enhance reproducibility, we provide both the knowledge bases and the pre-built FAISS indexes for the best configuration presented in the paper. Embeddings are generated using the [EVA-CLIP](https://huggingface.co/BAAI/EVA-CLIP-8B) model.
- 
-- **Infoseek** — index available [here](https://ailb-web.ing.unimore.it/publicfiles/drive/reflectiva/index/infoseek_EVA_text_summary.zip)
-- **Encyclopedic-VQA** — index available [here](https://ailb-web.ing.unimore.it/publicfiles/drive/reflectiva/index/evqa_EVA_image.zip)
 
 ## Inference
 
