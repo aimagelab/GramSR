@@ -82,7 +82,7 @@ python inference.py \
 
 
 ## Results on Benchmark
-For convenient evaluation and fair comparison, we provide GramSR’s test results on the RealSR and DRealSR benchmarks, stored in `imgs/results/realsr/` and `imgs/results/drealsr/`, respectively. This setup enables straightforward benchmarking and supports reproducible comparison across different super-resolution methods. We also include the evaluation script ( `metrics_calculation.py`) used to generate the quantitative results reported in the paper, enabling full reproducibility of the metrics obtained on our test images and facilitating direct verification of the reported performance.
+For convenient evaluation and fair comparison, we provide GramSR’s test results on the RealSR and DRealSR benchmarks, stored in `imgs/results/realsr/` and `imgs/results/drealsr/`, respectively. This setup enables straightforward benchmarking and supports reproducible comparison across different super-resolution methods. We also include the evaluation script (`metrics_calculation.py`) used to generate the quantitative results reported in the paper, enabling full reproducibility of the metrics obtained on our test images and facilitating direct verification of the reported performance.
 
 
 
