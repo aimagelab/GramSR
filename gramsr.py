@@ -22,8 +22,6 @@ from torchvision import transforms
 from adapters import *
 
 sys.path.append(os.getcwd())
-#from src.models.autoencoder_kl import AutoencoderKL
-#from src.models.unet_2d_condition import UNet2DConditionModel
 from src.my_utils.vaehook import VAEHook
 
 from diffusers import AutoencoderKL, UNet2DConditionModel
