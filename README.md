@@ -45,7 +45,6 @@ source .venv/bin/activate
 
 python -m pip install --upgrade pip
 
-# Example: Torch wheels for CUDA 12.6
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 # Install remaining dependencies
