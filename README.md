@@ -36,10 +36,6 @@ GramSR is a
 
 
 ## Environment Setup
-The following code was tested using:
-
-- Python 3.11
-- CUDA 12.6 (for GPU inference)
 
 ### 1) Create the inference environment
 
