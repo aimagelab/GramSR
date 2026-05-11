@@ -45,6 +45,10 @@ pip install -r requirements.txt
 
 If you use `conda`, you can install the packages from [requirements.txt](requirements.txt) in an activated conda environment.
 
+### 2) Download wheights
+
+
+
 ## Inference
 
 ```bash
