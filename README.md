@@ -61,7 +61,7 @@ If you use `conda`, you can install the packages from [requirements.txt](require
 ```bash
 python inference.py \
   --pretrained_model_path /path/to/sd2.1_model \
-  --lora_dir ./checkpoints \
+  --lora_dir ./weights/checkpoints \
   --output_dir output/pred
 ```
 
