@@ -49,8 +49,8 @@ If you use `conda`, you can install the packages from [requirements.txt](require
 
 ```bash
 python inference.py \
-  --pretrained_model_path /path/to/pretrained_model_or_hf_id \
-  --lora_dir /path/to/weights/checkpoints \
+  --pretrained_model_path /path/to/sd2.1_model \
+  --lora_dir ./checkpoints \
   --output_dir output/pred
 ```
 
