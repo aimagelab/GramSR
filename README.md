@@ -30,8 +30,7 @@ At inference time, independent guidance scales provide flexible control over res
 ## Table of Contents
 
 - [Environment Setup](#environment-setup)
-- [Inference](#inference)
-- [Outputs](#outputs)
+- [Quick Inference](#inference)
 - [Citation](#citation)
 
 
