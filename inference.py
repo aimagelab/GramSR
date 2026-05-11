@@ -50,7 +50,6 @@ def main(args):
 
             assert x_src.shape[0] == 1, "Batch size must be 1"
 
-            # Prompt vuoto
             batch["prompt"] = [""]
 
             # Forward
