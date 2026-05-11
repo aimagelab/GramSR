@@ -29,7 +29,7 @@ GramSR is a
 
 ## Environment Setup
 
-### 1) Create the inference environment
+### 1) Create the environment
 
 ```bash
 python3.11 -m venv .venv
