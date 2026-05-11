@@ -26,7 +26,6 @@ def main():
     IMG_EXTS = ['.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.webp']
     METRICS = ['psnr', 'ssim', 'lpips', 'dists', 'niqe', 'clipiqa', 'musiq', 'maniqa']
 
-    # Inizializza metricatori PyIQA
     metricators = {
         'psnr': pyiqa.create_metric('psnr', test_y_channel=True, color_space='ycbcr').to(device),
         'ssim': pyiqa.create_metric('ssim', test_y_channel=True, color_space='ycbcr').to(device),
@@ -35,7 +34,6 @@ def main():
         'niqe': pyiqa.create_metric('niqe', device=device).to(device)
     }
 
-    # Lista immagini
     sr_files = sorted([f for f in os.listdir(SR_DIR) if os.path.splitext(f)[1].lower() in IMG_EXTS])
     results = []
 
@@ -80,12 +78,12 @@ def main():
 
         results.append(row)
 
-    # Salva metriche per immagine
+
     df = pd.DataFrame(results)
     df.to_csv(os.path.join(SAVE_DIR, "iqa_metrics_per_image.csv"), index=False)
     print("Saved per-image metrics to iqa_metrics_per_image.csv")
 
-    # Calcola medie finali
+
     mean_metrics = {}
     for col in df.columns:
         if col == 'image':
@@ -93,7 +91,7 @@ def main():
         valid_values = df[col].dropna()
         mean_metrics[col] = valid_values.mean() if len(valid_values) > 0 else None
 
-    # Calcola FID globale
+
     try:
         fid_metric = pyiqa.create_metric('fid', device=device)
         fid_value = fid_metric(REF_DIR, SR_DIR)
@@ -102,12 +100,12 @@ def main():
         print("Error calculating FID:", e)
         mean_metrics['FID'] = None
 
-    # Stampa medie finali
-    print("\n=== Media finale per ciascuna metrica ===")
+
+    print("\n=== Final Average per Metric ===")
     for k, v in mean_metrics.items():
         print(f"{k}: {v:.4f}" if v is not None else f"{k}: N/A")
 
-    # Salva medie finali
+
     df_mean = pd.DataFrame([mean_metrics])
     df_mean.to_csv(os.path.join(SAVE_DIR, "iqa_metrics_mean.csv"), index=False)
     print("Saved mean metrics to iqa_metrics_mean.csv")
