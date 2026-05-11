@@ -15,6 +15,8 @@ Diffusion-Based Super-Resolution </h1>
 
 ## Overview
 
+
+![GramSR](imgs/method.png)
 GramSR is a
 ## Table of Contents
 
