@@ -10,8 +10,11 @@ Diffusion-Based Super-Resolution </h1>
 <p align="center">
 <a href='https://arxiv.org/abs/2604.2545'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </p>
+
 ## 📢 Latest Updates
-  - [2026/05/11] 🤗 Inference code and **weights** release
+  - [2026/04/24] 🤗 Inference code and **weights** release
+  - [2026/04/09] 🌟 ReAG has been selected as **Highlight**
+  - [2026/02/21] 📚 ReAG has been **accepted @ CVPR 2026**
 
 ## Overview
 
