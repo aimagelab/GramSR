@@ -79,6 +79,11 @@ python inference.py \
 ```
 
 
+## Results on Benchmark
+For convenient evaluation and fair comparison, we provide GramSR’s test results on the RealSR and DRealSR benchmarks, stored in `imgs/results/realsr/` and `imgs/results/drealsr/`, respectively. This setup enables straightforward benchmarking and supports reproducible comparison across different super-resolution methods.
+
+
+
 ## Citation
 
 If you use this code, please cite our ICPR 2026 paper:
