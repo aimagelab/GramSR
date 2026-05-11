@@ -12,9 +12,7 @@ Diffusion-Based Super-Resolution </h1>
 </p>
 
 ## 📢 Latest Updates
-  - [2026/04/24] 🤗 Inference code and **weights** release
-  - [2026/04/09] 🌟 ReAG has been selected as **Highlight**
-  - [2026/02/21] 📚 ReAG has been **accepted @ CVPR 2026**
+  - [2026/05/11] 🤗 Inference code and **weights** release
 
 ## Overview
 
