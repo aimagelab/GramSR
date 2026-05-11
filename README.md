@@ -17,7 +17,16 @@ Diffusion-Based Super-Resolution </h1>
 
 
 ![GramSR](imgs/method.png)
-GramSR is a
+
+GramSR is a one-step diffusion-based real-world image super-resolution framework built on Stable Diffusion. Unlike previous methods relying on text-based conditioning, GramSR leverages dense visual features extracted from the low-resolution input using a pre-trained DINOv3 encoder, enabling stronger spatial alignment and more faithful restoration.
+
+The framework adopts a three-stage LoRA training strategy:
+- **Pixel-level LoRA** for degradation removal
+- **Semantic-level LoRA** for perceptual enhancement
+- **Texture-level LoRA** for texture consistency via Gram matrix supervision
+
+At inference time, independent guidance scales provide flexible control over restoration quality, semantic enhancement, and texture preservation.
+
 ## Table of Contents
 
 - [Environment Setup](#environment-setup)
