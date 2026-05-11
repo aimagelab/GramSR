@@ -45,8 +45,14 @@ pip install -r requirements.txt
 
 If you use `conda`, you can install the packages from [requirements.txt](requirements.txt) in an activated conda environment.
 
-### 2) Download wheights
+### 2) Models & weights
 
+
+
+**Models & weights**
+- Stable Diffusion 2.1 weights (required): download the Stable Diffusion 2.1 model weights and provide their folder path as `--pretrained_model_path` when running the scripts.
+- The DINO embedder in the code defaults to the HF model id `facebook/dinov3-vitb16-pretrain-lvd1689m` and will be downloaded automatically if not present in the local cache.
+- LoRA adapters and other checkpoints are read from the `weights` (or `weights/checkpoints`) directory in the repo; filenames in use by the code follow the pattern used in `weights/checkpoints` (e.g. `adapter_53001.pth`, `model_12501.pkl`). Save any checkpoints you download from the provided link into `weights/checkpoints/` so the code can find them.
 
 
 ## Inference
