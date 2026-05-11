@@ -19,7 +19,7 @@ def parse_args(input_args=None):
     parser.add_argument("--lambda_dino", default=1.0, type=float)
 
     # args for the csd training
-    parser.add_argument("--pretrained_model_path_csd", default='/work/tesi_fdoronzio/sd3-flux/preset/models/models--stabilityai--stable-diffusion-3.5-medium', type=str)
+    parser.add_argument("--pretrained_model_path_csd", default='', type=str)
     parser.add_argument("--min_dm_step_ratio", default=0.02, type=float)
     parser.add_argument("--max_dm_step_ratio", default=0.98, type=float)
     parser.add_argument("--neg_prompt_csd", default="painting, oil painting, illustration, drawing, art, sketch, oil painting, cartoon, CG Style, 3D render, unreal engine, blurring, dirty, messy, worst quality, low quality, frames, watermark, signature, jpeg artifacts, deformed, lowres, over-smooth", type=str)
@@ -29,7 +29,7 @@ def parse_args(input_args=None):
     # args for the `t` test
     parser.add_argument("--timesteps1", default=1, type=float)
     # details about the model architecture
-    parser.add_argument("--pretrained_model_path", default='/work/tesi_fdoronzio/sd3-flux/preset/models/models--stabilityai--stable-diffusion-3.5-medium')
+    parser.add_argument("--pretrained_model_path", default='')
     # # unet lora setting
     parser.add_argument("--lora_rank_unet_pix", default=4, type=int)
     parser.add_argument("--lora_rank_unet_sem", default=4, type=int)
@@ -41,7 +41,7 @@ def parse_args(input_args=None):
 
     # dataset options
     parser.add_argument("--dataset_txt_paths", default='/gt_path.txt', type=str)
-    parser.add_argument("--dataset_val_txt_paths", default='/work/tesi_fdoronzio/sd3-flux/preset/gt_val_path.txt', type=str)
+    parser.add_argument("--dataset_val_txt_paths", default='', type=str)
     parser.add_argument("--highquality_dataset_txt_paths", default=None, type=str)#'/gt_selected_path.txt'
     parser.add_argument("--dataset_test_folder",
                         default="/testfolder")
@@ -56,7 +56,7 @@ def parse_args(input_args=None):
     # training details
     parser.add_argument("--output_dir", default='experiments/oup')
     parser.add_argument("--resume_dino", default=0, type=int)
-    parser.add_argument("--lora_dir", default='/work/tesi_fdoronzio/sd3-flux/experiments/train-sd3/checkpoints')
+    parser.add_argument("--lora_dir", default='')
     parser.add_argument("--seed", type=int, default=123, help="A seed for reproducible training.")
     parser.add_argument("--train_batch_size", type=int, default=2, help="Batch size (per device) for the training dataloader.")
     parser.add_argument("--num_training_epochs", type=int, default=10000)
