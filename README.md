@@ -7,6 +7,8 @@ Diffusion-Based Super-Resolution </h1>
   
 </div>
 
+<a href='https://arxiv.org/abs/2604.2545'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+
 <p align="center">
   <a href="https://arxiv.org/abs/2604.25457">
     <img src="./assets/model.png" alt="GramSR Paper on Arxiv" width="840" />
