@@ -14,6 +14,7 @@ Diffusion-Based Super-Resolution </h1>
 </p>
 
 ## 📢 Latest Updates
+  - [2026/04/31] 📚 GramSR has been accepted @ ICPR 2026
   - [2026/05/11] 🤗 Inference code and **weights** release
 
 ## Overview
