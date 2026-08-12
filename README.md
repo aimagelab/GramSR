@@ -7,6 +7,8 @@ Diffusion-Based Super-Resolution </h1>
   
 </div>
 
+🚩 Accepted by ICPR2026
+
 <p align="center">
 <a href='https://arxiv.org/abs/2604.25457'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </p>
